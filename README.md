@@ -1,6 +1,12 @@
 # NVIDIA Share (Debloat)
 Removes unnecessary features of NVIDIA Share and make it feel more like og shadowplay.
 
+## Removed features
+- Broadcasting
+- Camera
+- Custom Overlays
+- Highlights
+
 ## Previews
 <img src="https://github.com/sneakyevil/nvidia-share-debloat/assets/29150970/1aefba58-d1a1-4cf4-8f9e-f91dbe27e1b4" width="30%"></img>
 <img src="https://github.com/sneakyevil/nvidia-share-debloat/assets/29150970/e554e46a-9127-4ed0-90f4-8e3f99405e0f" width="30%"></img>

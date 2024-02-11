@@ -11427,7 +11427,7 @@ var vendor = function(e) {
 			i = n, b(a.EVENTS_COMMON_STORE, t, i), de.offline || angular.equals(oe, m.NONE) ? ue.info("Device offline or No Functional consent. No clean job happened.", oe) : (_(), ce && (M(), k(), ce = !1))
 		}, this.sendEventDetail = function(t, n, i) {
 			if (t && n) {
-				if (i = i || {}, i && !i.anonymize && angular.equals(oe, m.NONE) || n && r.isUndefined(n.gdprLevel)) return ue.info("Functional consent not received, discarding event", t, n.gdprLevel), r.isFunction(i.afterDone) && i.afterDone(), l.FUNCTIONAL_CONSENT_NOT_RECEIVED;
+				/*if (i = i || {}, i && !i.anonymize && angular.equals(oe, m.NONE) || n && r.isUndefined(n.gdprLevel)) return ue.info("Functional consent not received, discarding event", t, n.gdprLevel), r.isFunction(i.afterDone) && i.afterDone(), l.FUNCTIONAL_CONSENT_NOT_RECEIVED;
 				var o = i.appExit === !0;
 				if (t.immediateRequest === !0 && de.offline === !1) {
 					var a = p.NONE;
@@ -11442,7 +11442,7 @@ var vendor = function(e) {
 					}).catch(function(e) {
 						ue.error("Failed to send eventdata for:", t.name, ".ErrorInfo: status", e.status, ", data", e.config && e.config.data), V(n, o, i)
 					})
-				} else V(n, o, i);
+				} else V(n, o, i);*/
 				return l.OK
 			}
 			return ue.error("eventName undefined "), l.UNPROCESSED

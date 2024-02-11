@@ -4105,45 +4105,6 @@ webpackJsonp([1, 0], [function(e, t, n) {
 						notifs: ["RECORD_STARTED"],
 						enabled: !0
 					},
-					BRStarted: {
-						name: "l10n.broadcastStarted",
-						notifs: ["BROADCAST_STARTED", "BROADCAST_STOPPED"],
-						enabled: !0
-					},
-					BRPaused: {
-						name: "l10n.broadcastPaused",
-						notifs: ["BROADCAST_PAUSED", "BROADCAST_RESUMED"],
-						enabled: !0
-					},
-					highlightsHeader: {
-						header: "l10n.highlights",
-						viewHeader: !0
-					},
-					savedHL: {
-						name: "l10n.notificationHighlightSaved",
-						notifs: ["HIGHLIGHTS_SAVED"],
-						enabled: !0
-					},
-					screenshotHDRError: {
-						name: "l10n.ScreenshotHDRError",
-						notifs: ["HDR_ERROR_SCREENSHOT"],
-						enabled: !0
-					},
-					recordHDRError: {
-						name: "l10n.RecordHDRError",
-						notifs: ["HDR_ERROR_RECORD"],
-						enabled: !0
-					},
-					broadcastHDRError: {
-						name: "l10n.BroadcastHDRError",
-						notifs: ["HDR_ERROR_BROADCAST"],
-						enabled: !0
-					},
-					hlHDRError: {
-						name: "l10n.HighlightsHDRError",
-						notifs: ["HDR_ERROR_HL"],
-						enabled: !0
-					},
 					performanceMonitoringHeader: {
 						header: "l10n.perfmonoc.performanceMonitoring",
 						viewHeader: !0
@@ -26637,9 +26598,9 @@ webpackJsonp([1, 0], [function(e, t, n) {
 				savedSS: r.bool2Toggle(g.notifiers.savedSS.enabled),
 				irOnOff: r.bool2Toggle(g.notifiers.IROnOff.enabled),
 				mrStarted: r.bool2Toggle(g.notifiers.MRStarted.enabled),
-				brStarted: r.bool2Toggle(g.notifiers.BRStarted.enabled),
-				brPaused: r.bool2Toggle(g.notifiers.BRPaused.enabled),
-				savedHL: r.bool2Toggle(g.notifiers.savedHL.enabled)
+				brStarted: r.bool2Toggle(false),
+				brPaused: r.bool2Toggle(false),
+				savedHL: r.bool2Toggle(false)
 			};
 			r.push(c.OSC_PREFERENCES_NOTIFICATIONS_CHANGED, e), o.setConfigs(g.notifiers), i.off(d.ESCAPE, g.done)
 		})
